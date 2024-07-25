@@ -1,0 +1,23 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<body style="margin:0,10px,0,0">
+    <div style="align-content:center; text-align: center" class="row">
+        <h1 class="fontNew">Comcast endpoint for Mpower 2.0</h1>
+    </div>
+    <div style="align-content:center; text-align: center" class="row">
+        <div class="col-md-4">
+            <h3>@ViewBag.version</h3>
+            <br />
+            <a><strong>Version of Application: </strong>@ViewBag.versionnumber</a>
+            <p>The system is in </p>
+            <h1>@ViewData["ASPNETCORE_ENVIRONMENT"]</h1>
+
+        </div>
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Cops Monitoring Mpower 2.0 </p>
+        </footer>
+    </div>
+</body>

@@ -77,6 +77,10 @@ namespace BlazorApp1
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapControllerRoute(
+                    name: "Comcast",
+                    pattern: "{controller=Comcast}/{action=about}/{id?}",
+                    defaults: new { Controller = "Comcast", action = "about" });
                 endpoints.MapBlazorHub();
                 endpoints.MapFallbackToPage("/_Host");
             });
